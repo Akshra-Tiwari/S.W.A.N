@@ -4,7 +4,7 @@ export const getDashboardStats =
   async () => {
     const res =
       await axios.get(
-        "http://localhost:5000/api/dashboard/stats"
+        "${process.env.NEXT_PUBLIC_API_URL}/api/dashboard/stats"
       );
 
     return res.data;

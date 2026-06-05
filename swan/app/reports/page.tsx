@@ -40,15 +40,15 @@ statsRes
 ] = await Promise.all([
 
 axios.get(
-"http://localhost:5000/api/admin/users"
+"${process.env.NEXT_PUBLIC_API_URL}/api/admin/users"
 ),
 
 axios.get(
-"http://localhost:5000/api/reports"
+"${process.env.NEXT_PUBLIC_API_URL}/api/reports"
 ),
 
 axios.get(
-"http://localhost:5000/api/analytics"
+"${process.env.NEXT_PUBLIC_API_URL}/api/analytics"
 )
 
 ])
@@ -84,7 +84,7 @@ role:string
 
 await axios.put(
 
-`http://localhost:5000/api/admin/users/${id}/role`,
+`${process.env.NEXT_PUBLIC_API_URL}/api/admin/users/${id}/role`,
 
 { role }
 
@@ -105,7 +105,7 @@ status:string
 
 await axios.put(
 
-`http://localhost:5000/api/reports/${id}/status`,
+`${process.env.NEXT_PUBLIC_API_URL}/api/reports/${id}/status`,
 
 { status }
 
@@ -120,7 +120,7 @@ async(id:string)=>{
 
 await axios.delete(
 
-`http://localhost:5000/api/reports/${id}`
+`${process.env.NEXT_PUBLIC_API_URL}/api/reports/${id}`
 
 )
 

@@ -54,7 +54,7 @@ const token =
 await firebaseUser.getIdToken();
 
 await axios.post(
-"http://localhost:5000/api/auth/sync-user",
+"${process.env.NEXT_PUBLIC_API_URL}/api/auth/sync-user",
 {},
 {
 headers:{
@@ -68,7 +68,7 @@ try{
 
 const me =
 await axios.get(
-"http://localhost:5000/api/auth/me",
+"process.env.NEXT_PUBLIC_API_URL",
 {
 headers:{
 Authorization:
