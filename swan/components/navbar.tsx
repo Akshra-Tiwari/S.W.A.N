@@ -66,7 +66,7 @@ export function Navbar() {
             <button onClick={() => handleLinkClick("/")} className="flex items-center gap-2 group">
               <div className="w-10 h-10 lg:w-12 lg:h-12 relative transition-transform group-hover:scale-110 rounded-full overflow-hidden">
                 <Image
-                  src="/images/swan-logo.png"
+                  src="swan-logo.png"
                   alt="S.W.A.N. Protocol Logo"
                   fill
                   className="object-cover"

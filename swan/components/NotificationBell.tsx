@@ -51,8 +51,6 @@ return(
 
 <button className="text-xl">
 
-🔔
-
 {notifications.length > 0 && (
 
 <span className="ml-1 text-red-500">
