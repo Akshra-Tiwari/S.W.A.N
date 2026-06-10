@@ -178,6 +178,16 @@ export function ReportProcessSection() {
                 )}
               </div>
             </div>
+            <div className="pt-4">
+  <Button
+    className="w-full bg-cyan-600 hover:bg-cyan-700 text-white"
+    onClick={() => {
+      alert("Report Submitted Successfully")
+    }}
+  >
+    Submit Report
+  </Button>
+</div>
           </Card>
         </motion.div>
       </div>
